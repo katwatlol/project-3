@@ -1,0 +1,212 @@
+/********COLOR PALETTE*******
+
+header: #ffc266
+input lightgrey: e8e9ea
+button red: #FF0000
+outline blue: 507cc4
+*/
+
+
+/*GENERAL CSS*/
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.personal-info input, label, button {
+  display: flex;
+}
+
+.checklists input {
+  float: left;
+}
+
+fieldset {
+  border: none;
+}
+
+body {
+  background-color: #b8b894;
+}
+
+/*TOP AND HEADER CSS*/
+
+header {
+  display: block;
+  text-align: center;
+}
+
+.logo {
+  background: #2d3945;
+  color: white;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-bottom: 2em;
+}
+
+.header-p {
+  margin-left: 2em;
+  margin-right: 2em;
+  color: black;
+}
+
+.line-top, .line-under {
+  margin-left: .2em;
+  margin-right: .2em;
+}
+
+.line-top {
+  border: 8px solid black;
+  margin-top: 2em;
+}
+
+.line-under {
+  border: 3px solid black;
+  margin-top: -.3em;
+  margin-bottom: 1em;
+}
+
+/*FORM MAIN BODY TEXT*/
+
+legend {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+label, p {
+  color: black;
+}
+
+/*FORM MAIN BODY FORM ELEMENTS*/
+
+.personal-info input, select {
+  background: #FFFAF0
+  border-style: none;
+  border-radius: 3px;
+  width: 100%;
+  padding: 1em;
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+
+textarea {
+  background: #FFFAF0
+  border-radius: 3px;
+  border: none;
+  width: 100%;
+  height: 7em;
+  resize: none;
+}
+
+button {
+  display: inline-block;
+  background: #6acca6;
+  border: none;
+  color: white;
+  font-family:'Roboto', sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-decoration: none;
+  width: 100%;
+  margin-top: 2em;
+  text-align: center;
+  padding: 1em;
+  border-radius: 3px;
+}
+
+.copy {
+  font-size: .8em;
+  text-align: center;
+  color: white;
+  font-style:'Roboto', sans-serif;
+}
+
+.checklists label {
+  padding: .5em;
+}
+
+.checklists p {
+  margin-top: 2em;
+}
+
+/*LABEL-INPUT ALIGNMENT*/
+
+.checklists [type="checkbox"], [type="radio"] {
+  display: flex;
+  flex-direction: column;
+  margin-top: .7em;
+}
+
+.other {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+/*PLACEHOLDER STYLES FOR CHROME*/
+
+::-webkit-input-placeholder {
+  color: #bcc6d6;
+  text-align: right;
+  font-family:'Roboto', sans-serif;
+  font-size: .9em;
+  font-style: italic;
+}
+
+/*INPUT STYLES/HOVER/FOCUS STATES*/
+
+input:focus::-webkit-input-placeholder {
+  color:transparent;
+}
+
+input:hover {
+  transition: all .5s ease-in-out;
+  background: white;
+}
+
+.personal-info input:focus {
+  background: white;
+  outline: 2px solid rgb(80, 124, 196);
+  transition: 0.1s;
+}
+
+.select-menu {
+  color: #bcc6d6;
+  font-family: 'Roboto', sans-serif;
+}
+
+.select-menu:hover {
+  color: #2d3945;
+  transition: all .6s ease-out;
+}
+
+.select-menu:focus {
+  outline: 2px solid rgb(80, 124, 196);
+  transition: 0.1s;
+}
+
+textarea:focus {
+  outline: 2px solid rgb(80, 124, 196);
+  transition: 0.1s;
+  background: white;
+}
+
+/*BUTTON RESPONSE*/
+
+button:focus {
+  background: #419172;
+}
+
+/*VALIDATIONS*/
+
+input[type="email"]:valid {
+  outline: 3px solid lightgreen;
+  background: white;
+}

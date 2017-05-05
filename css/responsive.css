@@ -1,0 +1,45 @@
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 768px) {
+
+  /** {
+    border: 1px solid red;
+  }*/
+
+.promo, form{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.personal-info {
+  display: block;
+}
+
+.personal-info input, select {
+  max-width: 60%;
+  float: right;
+  clear: both;
+  margin-top: -2em;
+}
+
+.personal-info label {
+  float: left;
+  clear: both;
+  margin-top: 4em;
+  /*padding-right: 2em;*/
+  width: 40%;
+
+}
+
+.personal-info input:last-child {
+  max-width: 30%;
+  margin-right: 30%;
+}
+
+legend {
+  padding-top: 1em;
+}
+
+}
